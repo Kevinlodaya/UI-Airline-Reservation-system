@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signup.css" rel="stylesheet">
+	
+	<!-- JQuery -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- Custom JQuery Code -->
+	<script src="js/utility.js"></script>
+	<script src="js/signup.js"></script>
+	<script src="js/signin.js"></script>
+	<script src="js/signout.js"></script>
+	<script src="js/changepassword.js"></script>
+	<script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
+	<style>
+		body {
+        background: darkslategrey;
+        font-family: sans-serif;
+        font-size: 1.3em;
+    	}
+    	section {
+        padding: 20px;
+        margin: 20px;
+        background-color: cornsilk;
+        border: 6px solid gold;
+    	}
+    	h1 {
+        color: coral;
+    	}
+    	p {
+        color: orange;
+    	}
+    	a:link,
+    	a:visited {
+        color: darkorange;
+    	}
+    	a:hover {
+        color: orangered;
+    	}
+    	a:active {
+        background: orangered;
+        color: white;
+    	}
+    	footer.ex1{
+    		padding-top: 10%;
+    		padding-left: 10%;
+    	}
+	</style>
+	
+	
+</head>
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Anant Airways</a>
+		  </div>
+		  <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+			  
+			  <li class="active"><a href="about.html">Contact Us</a></li>
+			  <li class="active"><a href="dashboard.html"  id="dashboardButton">Gallery</a></li>
+			  <li class="active" id="registerButton"><a href="signup.html">Register</a><li>
+			  <li class="active" id="adminButton"><a href="adminDash.html">Booked History</a></li>
+			</ul>
+			
+			<div class="navbar-form navbar-right" id="navbar-signedout">
+					<div class="form-group">
+						<input type="text" placeholder="Email" class="form-control" name="email" id="emailsignin">
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" class="form-control" name="password" id="passwordsignin">
+					</div>
+					<button type="submit" class="btn btn-success" id="signinbutton">Sign in</button>
+				</div>
+				
+			<div class="navbar-form navbar-right" id="navbar-signedin">
+					
+			</div>
+		  </div><!--/.nav-collapse -->
+		</div>
+	</nav>
+  
+	<div class="container theme-showcase" role="main">
+		<div class="container-fluid">
+			<section class="container">
+				<div class="alert-area"></div>
+				<div class="container-page">
+					
+				</div>
+				<div class="container-page">		
+					<div class="col-md-6">
+						<h3 class="dark-grey">Registration</h3>
+						
+							<div class="form-group col-lg-12">
+								<label>Email</label>
+								<input type="" name="Email" class="form-control" id="Email" value="" placeholder="example@gmail.com">
+							</div>
+							
+							<div class="form-group col-lg-12">
+								<label>Repeat Email Address</label>
+								<input type="" name="Repeat Email" class="form-control" id="Repeat Email" value="" placeholder="example@gmail.com">
+							</div>	
+							
+							<div class="form-group col-lg-6">
+								<label>Password</label>
+								<input type="password" name="Password" class="form-control" id="Password" value="" placeholder="Password">
+							</div>
+							
+							<div class="form-group col-lg-6">
+								<label>Repeat Password</label>
+								<input type="password" name="Repeat Password" class="form-control" id="Repeat Password" value="" placeholder="Repeat Password">
+							</div>
+											
+							<div class="form-group col-lg-6">
+								<label>First Name</label>
+								<input type="" name="First Name" class="form-control" id="First Name" value="" placeholder="First Name">
+							</div>
+							
+							<div class="form-group col-lg-6">
+								<label>Last Name</label>
+								<input type="" name="Last Name" class="form-control" id="Last Name" value="" placeholder="Last Name">
+							</div>
+							
+									
+						
+					</div>
+				
+					<div class="col-md-6">
+						<h3 class="dark-grey">Terms and Conditions</h3>
+						<p>
+							General Information
+While compiling this information, Anant Airlines has endeavored to ensure that all information is
+correct. However, no guarantee or representation is made to the accuracy or completeness of the
+information contained here. This information is subject to changes by Anant Airlines without notice.
+Class of Service <br>
+Anant Airlines offers three classes of service:
+#First Class<br>
+#Executive Class<br>
+#Economy<br>
+->First class is available on most of our Boeing flights. However, we do not offer this class on
+the Airbus and ATR aircrafts.
+Executive Class is available on most of our Boeing and Airbus aircrafts.
+Non-Smoking Flights
+->The Government of India prohibits smoking on all Anant Airlines flights. As a separate
+precautionary measure, all toilets are fitted with smoke detectors.
+Reservation
+->We suggest that you make your reservations as far in advance as possible through any Anant Airlines
+office or approved Travel Agent. You can also book pay and purchase your e-ticket using our
+online booking facility. We kindly request you to supply a contact number during reservation
+for each city in your itinerary. This will enable us to inform you of any irregularity with a flight
+on which you are booked.
+Reservation Requirements
+->Reservations are not confirmed until recorded as accepted by Carrier or its authorized Agent
+->As provided in carrier's Regulations, certain fares may have conditions, which limit
+or exclude the guest's right to change or cancel reservation
+						</p>
+						
+						<button type="submit" class="btn btn-primary" id="register">Register</button>
+					</div>
+					
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer class="ex1">
+			<!--<p class="pull-right"><a href="#">Back to top</a></p>-->
+			 <p>&copy; 2019 ANANT, Inc.</p>
+			 <p><a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	</footer>
+</div>
+</body>
+</html>
